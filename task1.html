@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<div class="buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('Car')">Car</button>
+    <button onclick="filterImages('Bike')">Bike</button>
+    <button onclick="filterImages('Monuments')">Monuments</button>
+</div>
+
+<div class="gallery">
+
+    <img src="./car/car.jpg" class="Car" onclick="openLightbox(0)" >
+    <img src="./car/pexels-austin-russell-686677111-30570357.jpg" class="Car" onclick="openLightbox(1)" >
+    <img src="./car/pexels-dbaler-11960288.jpg" class="Car" onclick="openLightbox(2)" >
+    <img src="./car/pexels-introspectivedsgn-28906423.jpg" class="Car" onclick="openLightbox(3)">
+    <img src="./car/pexels-kouki-walim-1227247-37426530.jpg" class="Car" onclick="openLightbox(4)" >
+    <img src="./car/pexels-maja-kos-1139601728-20943730.jpg" class="Car" onclick="openLightbox(5)" >
+     <img src="./car/pexels-mikey-white-922915629-19976444.jpg" class="Car" onclick="openLightbox(6)" >
+     <img src="./car/pexels-odobesku-9018708.jpg" class="Car" onclick="openLightbox(7)" > 
+    <img src="./car/pexels-sefa-demirtas-2152709769-36352986.jpg" class="Car" onclick="openLightbox(8)">
+     <img src="./car/pexels-shantanu09-8975647.jpg" class="Car" onclick="openLightbox(9)">
+      <img src="./car/pexels-snnematic-18412480.jpg" class="Car" onclick="openLightbox(10)" >
+     <img src="./car/pexels-theshuttervision-12682786.jpg" class="Car" onclick="openLightbox(11)">
+     <img src="./car/pexels-wavyvisuals-377312923-19273958.jpg" class="Car" onclick="openLightbox(12)" >
+     <img src="./car/pexels-zakhar-18397478.jpg" class="Car" onclick="openLightbox(13)" >
+     <img src="./car/pexels-zeko-340144-5726879.jpg" class="Car" onclick="openLightbox(14)">
+
+     <img src="./bike/pexels-abhinav-8532352.jpg" class="Bike" onclick="openLightbox(15)" >
+    <img src="./bike/pexels-benprater-37721365.jpg" class="Bike"  onclick="openLightbox(16)" >
+    <img src="./bike/pexels-cigdem-bilgin-2154409770-33233632.jpg" class="Bike" onclick="openLightbox(17)" >
+      <img src="./bike/pexels-francesco-querente-2160182055-36984177.jpg" class="Bike" onclick="openLightbox(18)" >
+    <img src="./bike/pexels-jisso-heby-597210750-22845706.jpg" class="Bike"  onclick="openLightbox(19)" >
+    <img src="./bike/pexels-memet-oz-296480690-31870162.jpg" class="Bike" onclick="openLightbox(20)" >
+      <img src="./bike/pexels-nandu-vasudevan-167142178-10933042.jpg" class="Bike" onclick="openLightbox(21)">
+    <img src="./bike/pexels-nguy-n-bin-exciter-2161855701-37811560.jpg" class="Bike"  onclick="openLightbox(22)">
+    <img src="./bike/pexels-oneilgonzales-14407485.jpg" class="Bike" onclick="openLightbox(23)">
+      <img src="./bike/pexels-shivanshu-sharma-1351241-12714382.jpg" class="Bike" onclick="openLightbox(24)">
+    <img src="./bike/pexels-shndgd-36990109.jpg" class="Bike"  onclick="openLightbox(25)" >
+    <img src="./bike/pexels-suhashanjar-30275560.jpg" class="Bike" onclick="openLightbox(26)">
+      <img src="./bike/pexels-suhashanjar-30858871.jpg" class="Bike" onclick="openLightbox(27)" >
+    <img src="./bike/pexels-willians-huerta-2157111846-36429478.jpg" class="Bike"  onclick="openLightbox(28)" >
+
+
+
+    <img src="./monuments/monument.jpg"  class="Monuments" onclick="openLightbox(29)" >
+    <img src="./monuments/monument2.jpg" class="Monuments" onclick="openLightbox(30)"  >
+    <img src="./monuments/pexels-alen-joe-chacko-274124557-27316284.jpg"class="Monuments" onclick="openLightbox(31)" >
+     <img src="./monuments/pexels-archaic-ki-d-3378812-5476018.jpg"  class="Monuments" onclick="openLightbox(32)" >
+    <img src="./monuments/pexels-ayush-800654-5076126.jpg" class="Monuments" onclick="openLightbox(33)"  >
+    <img src="./monuments/pexels-isaacgraphy-17906713.jpg"class="Monuments" onclick="openLightbox(34)" >
+     <img src="./monuments/pexels-kokoko-cookiez-349384071-14815156.jpg"  class="Monuments" onclick="openLightbox(35)" >
+    <img src="./monuments/pexels-mananmaheshwari-37069496.jpg" class="Monuments" onclick="openLightbox(36)"  >
+    <img src="./monuments/pexels-molnartamasphotography-12467056.jpg"class="Monuments" onclick="openLightbox(37)" >
+     <img src="./monuments/pexels-primitive-spaces-2147980412-35822735.jpg"  class="Monuments" onclick="openLightbox(38)" >
+    <img src="./monuments/pexels-setu-r8-8816365.jpg" class="Monuments" onclick="openLightbox(39)"  >
+    <img src="./monuments/pexels-tshakeb-15687156.jpg"class="Monuments" onclick="openLightbox(40)" >
+     <img src="./monuments/pexels-ulrick-t-15393862.jpg"  class="Monuments" onclick="openLightbox(41)" >
+    <img src="./monuments/pexels-you-know-what-blog-822152095-20876797.jpg" class="Monuments" onclick="openLightbox(42)"  >
+
+</div>
+
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+
+    <img id="lightbox-img">
+
+    <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+
+<script src="task1.js"></script>
+
+</body>
+</html>
